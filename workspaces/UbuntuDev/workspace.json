@@ -1,7 +1,7 @@
 {
-  "friendly_name": "Ubuntu 24 Dev (Python • Node • Java)",
+  "friendly_name": "Ubuntu 24 Dev",
   "image_src": "ubuntu.png",
-  "description": "Ubuntu 24 (Kasm) dev image with Python (pyenv + Poetry), Node (nvm + pnpm/yarn), Java (Temurin 21 + Maven + Gradle), VSCodium fullscreen, Chrome for SSO.",
+  "description": "Ubuntu 24 (Kasm) dev image with Python , Node , Java , VSCodium fullscreen, Chrome for SSO.",
   "cores": 8,
   "memory": 16384,
   "gpu_count": 0,
