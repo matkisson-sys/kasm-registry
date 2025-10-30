@@ -1,0 +1,26 @@
+{
+  "friendly_name": "Cursor",
+  "image_src": "cursor.png",
+  "description": "Cursor (Electron-based IDE) packaged for Kasm. Opens directly with Chrome available for auth flows. 8GB Persistent storage limit.",
+  "cores": 2,
+  "memory": 2768,
+  "gpu_count": 0,
+  "cpu_allocation_method": "Inherit",
+  "docker_registry": "https://index.docker.io/v1/",
+  "categories": ["Development", "IDE"],
+  "require_gpu": false,
+  "enabled": true,
+  "image_type": "Container",
+
+  "persistent_profile_path": "/mnt/persistance/{username}/{image_id}",
+  "persistent_profile_config": { "size_limit": 8000000 },
+
+  "run_config": { "hostname": "kasm" },
+  "exec_config": {
+    "go":     { "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'",     "user": "1000" },
+    "assign": { "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'", "user": "1000" }
+  },
+  "architecture": ["amd64"],
+  "compatibility": [ { "version": "1.17.x", "image": "matkissonce/kasm-cursor", "uncompressed_size_mb": 3360, "available_tags": ["1.0.0"] } ],
+  "name": "kasmweb/core-debian-bookworm:1.17.0"
+}
