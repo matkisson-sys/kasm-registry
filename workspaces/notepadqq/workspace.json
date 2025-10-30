@@ -1,6 +1,6 @@
 {
   "friendly_name": "Notepadqq (Debian, App Mode)",
-  "image_src": "notepadqq.webp",
+  "image_src": "notepadqq.png",
   "description": "Lean Notepadqq app-only workspace on Debian 12 (smaller than Ubuntu).",
   "cores": 1,
   "memory": 768,
